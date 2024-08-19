@@ -1,0 +1,49 @@
+/* TailwindCSS 디렉티브 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body[data-pathname='/bacation/room'] :root {
+  max-width: none !important; /* /bacation/room 경로에서는 max-width 제한 해제 */
+}
+
+:root {
+  font-family: 'Pretendard', Inter, system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.react-time-picker__wrapper {
+  border: 0;
+}

@@ -1,0 +1,66 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.3.2'
+	id 'io.spring.dependency-management' version '1.1.6'
+}
+
+group = 'com.bacation'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(17)
+	}
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-web-services'
+
+	// S3에 올리기 위한 설정
+	implementation 'org.springframework.cloud:spring-cloud-starter-aws:2.2.6.RELEASE'
+	// https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-s3
+	implementation 'com.amazonaws:aws-java-sdk-s3:1.11.901'
+
+	// https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+	implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.17.1'
+	// https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore
+	implementation group: 'org.apache.httpcomponents', name: 'httpcore', version: '4.4.16'
+	// https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+	implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.13'
+
+	// https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api
+	compileOnly 'javax.servlet:javax.servlet-api:4.0.1'
+
+	// firebase를 위한 의존성
+	implementation 'com.google.firebase:firebase-admin:8.1.0'
+
+	// openvidu를 위한 의존성
+	implementation 'io.openvidu:openvidu-java-client:2.30.0'
+
+	compileOnly 'org.projectlombok:lombok'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	runtimeOnly 'com.mysql:mysql-connector-j'
+	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+}
+
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

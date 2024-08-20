@@ -66,7 +66,7 @@ npm run build
 <img src="assets/초기화면2.png" width="500px" height="500px"/>
 
 #### [관찰 모드 및 다이어리 화면]
-<img src="https://lab.ssafy.com/s11-webmobile1-sub2/S11P12B307/uploads/a08edb1ae4143fcc8b6bedee11d1592a/%EA%B4%80%EC%B0%B0_%EB%B0%8F_%EB%8B%A4%EC%9D%B4%EC%96%B4%EB%A6%AC.png" width="500px" height="500px"/>
+<img src="assets/관찰_및_다이어리.png" width="500px" height="500px"/>
 
 #### [활동 데이터 분석 화면]
 <img src="assets/데이터분석.png" width="500px" height="250px"/>

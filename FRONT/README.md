@@ -60,16 +60,16 @@ npm run build
 ## 🎨 UI/UX 디자인 (Figma)
 
 #### [온보딩 및 로그인 화면]
-<img src="https://lab.ssafy.com/s11-webmobile1-sub2/S11P12B307/uploads/e5518b33279941c94c99de60ea3cea68/%EC%B4%88%EA%B8%B0%ED%99%94%EB%A9%B4.png" width="500px" height="500px"/>
+<img src="assets/초기화면.png" width="500px" height="500px"/>
 
 #### [초기 설정 화면]
-<img src="https://lab.ssafy.com/s11-webmobile1-sub2/S11P12B307/uploads/0a683cf4fea72c684491f6bce3b28e38/%EC%B4%88%EA%B8%B0%ED%99%94%EB%A9%B42.png" width="500px" height="500px"/>
+<img src="assets/초기화면2.png" width="500px" height="500px"/>
 
 #### [관찰 모드 및 다이어리 화면]
 <img src="https://lab.ssafy.com/s11-webmobile1-sub2/S11P12B307/uploads/a08edb1ae4143fcc8b6bedee11d1592a/%EA%B4%80%EC%B0%B0_%EB%B0%8F_%EB%8B%A4%EC%9D%B4%EC%96%B4%EB%A6%AC.png" width="500px" height="500px"/>
 
 #### [활동 데이터 분석 화면]
-<img src="https://lab.ssafy.com/s11-webmobile1-sub2/S11P12B307/uploads/75dc1b8ecaaa71d968b3e4ff2c711a25/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D.png" width="500px" height="250px"/>
+<img src="assets/데이터분석.png" width="500px" height="250px"/>
 
 ## 🚀 FE Git Branch 전략
 

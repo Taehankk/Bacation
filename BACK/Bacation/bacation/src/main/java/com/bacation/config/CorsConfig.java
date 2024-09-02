@@ -16,10 +16,7 @@ public class CorsConfig {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true); // 서버 응답시 json 을 자바스크립트에서 처리할 수 있음
-        config.addAllowedOriginPattern("https://i11b307.p.ssafy.io");
         config.addAllowedOriginPattern("http://localhost:5173");// 모든 ip 에 응답 허용
-        config.addAllowedOriginPattern("https://bacation.s3.ap-northeast-2.amazonaws.com"); // 기본 도메인 패턴 추가
-        config.addAllowedOriginPattern("https://i11b307.p.ssafy.io:8443/#/");
         config.addAllowedHeader("*"); // 모든 header 응답 허용
         config.addExposedHeader("*");
         config.addAllowedMethod("*"); // 모든 요청 메소드 응답 허용

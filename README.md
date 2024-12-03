@@ -21,3 +21,5 @@
 #### [활동 데이터 분석 화면]
 <img src="FRONT/assets/데이터분석.png" width="500px" height="250px"/>
 
+## 🧑‍🤝‍🧑 팀원 소개
+![Teammate](FRONT/assets/팀원.jpg)
